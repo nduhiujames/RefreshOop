@@ -12,14 +12,14 @@ public class Zoo {
             System.out.println(animal.getName() + " is " + animal.getAge() + " years old.");
             animal.makeSound();
 
-            if (animal instanceof Mammal) {
-                Mammal mammal = (Mammal) animal;
-                mammal.nurse();
+            if (animal instanceof Flyable) {
+                Flyable flyable = (Flyable) animal;
+                flyable.fly();
             }
 
-            if (animal instanceof Bird) {
-                Bird bird = (Bird) animal;
-                bird.fly();
+            if (animal instanceof Swimable) {
+                Swimable swimable = (Swimable) animal;
+                swimable.swim();
             }
 
             System.out.println();
